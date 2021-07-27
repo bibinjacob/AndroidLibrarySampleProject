@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:colorControlNormal">#aaa</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:colorControlNormal">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>

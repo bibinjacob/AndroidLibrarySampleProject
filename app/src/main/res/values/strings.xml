@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Employee</string>
+    <string name="employee_module" >Employee Library</string>
+</resources>

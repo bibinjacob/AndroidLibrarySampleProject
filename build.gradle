@@ -1,0 +1,43 @@
+buildscript {
+    ext {
+        kotlin_version = '1.4.21'
+        jacoco_version = '0.8.5'
+        sonarqube_gradle_plugin = '2.6.2'
+        gradle_version = '4.0.2'
+        owasp_dependency_check_version = '6.0.3'
+    }
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+allprojects {
+    project.ext {
+        //DUMMY-DATA
+        baseUrl=properties.getProperty("BASE_URL")
+    }
+    repositories {
+        google()
+        jcenter()
+
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

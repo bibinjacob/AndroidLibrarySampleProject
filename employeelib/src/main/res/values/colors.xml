@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lib_colorPrimary">#ef2637</color>
+    <color name="lib_colorPrimaryDark">#FFFFFF</color>
+    <color name="lib_background_color">#FFFFFF</color>
+    <color name="colorAccent">#ef2637</color>
+    <color name="grey">#5a5a5f</color>
+    <color name="colorPrimary_red">#ef2637</color>
+    <color name="red_disabled">#f48f98</color>
+    <color name="ripple_color">#BA1926</color>
+    <color name="white">#ffffff</color>
+    <color name="txt_color_grey">#5A5A5F</color>
+    <color name="txt_color_red">#EF2637</color>
+</resources>

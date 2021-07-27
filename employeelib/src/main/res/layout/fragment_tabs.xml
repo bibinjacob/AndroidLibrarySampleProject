@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="tabViewModel"
+            type="emp.example.library.employee.general.home.presentation.TabsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lib_background_color">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lib_background_color"
+            android:fitsSystemWindows="true"
+            app:layout_constraintBottom_toTopOf="@+id/view_pager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lib_background_color"
+                    android:clipToPadding="true"
+                    android:minHeight="@dimen/margin_48dp"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/colorPrimary_red"
+                    app:tabIndicatorHeight="@dimen/dimens_3dp"
+                    app:tabMaxWidth="0dp"
+                    app:tabMode="fixed"
+                    app:tabPaddingEnd="0dp"
+                    app:tabPaddingStart="0dp"
+                    app:tabSelectedTextColor="@color/txt_color_red"
+                    app:tabTextAppearance="@style/tab_text" />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin_small_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
